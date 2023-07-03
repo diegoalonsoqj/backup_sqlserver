@@ -2,7 +2,7 @@
 
 Este script en bash realiza respaldos automáticos de bases de datos SQL Server. Se conecta a un servidor SQL Server utilizando "sqlcmd", obtiene la lista de bases de datos disponibles (excluyendo las bases de datos del sistema y "tempdb"), y luego realiza respaldos completos de cada una de las bases de datos encontradas. Finalmente, borra los archivos de backups antiguos con 2 o más días de antigüedad.
 
-Descripción detallada paso a paso:
+- Descripción detallada paso a paso:
 
 Se establecen las variables necesarias para configurar la ubicación del directorio de backups (backup_dir), el nombre de usuario (db_user) y contraseña (db_password) para la conexión al servidor SQL Server, así como el host (db_host) y puerto (db_port) del servidor. El formato de fecha y hora actual se obtiene y almacena en la variable current_datetime.
 
